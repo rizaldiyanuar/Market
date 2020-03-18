@@ -1,6 +1,5 @@
 # Marketplace
-Project Pengembangan Marketplace
-Project Pengembangan Sistem Informasi 2017
+Project Pengembangan Marketplace 2020 X Microsite
 
 ## Requirements:
 * [XAMPP](https://www.apachefriends.org/download.html) (atau tool lain, dengan versi PHP minimal 5.6.4.)  buat database
