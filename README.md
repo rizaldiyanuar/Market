@@ -14,7 +14,7 @@ username : admin
 password : 12345678
 
 * User
-username : budi
+username : user
 password : 12345678
 
 ## Modul yang tersedia:
@@ -41,9 +41,8 @@ Fitur :
 
 ### Kategori
 Fitur:
-1. 
-2. 
-3. 
+1. Belum tau
+2. Ini Juga sama
 
 ### Search
 Fitur :
@@ -69,15 +68,14 @@ Minus:
 
 ### Login 
 Fitur :
-1. Daftar
-2. Masuk Menggunakan <google / facebook> (jika belum terdaftar maka akan sync)
+1. Daftar <Wajib Daftar>
 
 ### Daftar 
 Fitur :
-1. Daftar menggunakan <google / facebook>
-2. <input> No Hp / Email
-3. <input> Password
-4. <input> Re-Enter Password
+1. <input> Email
+2. <input> Password
+3. <input> Re-Enter Password
+4. <input> No Hp
 5. Syarat & Ketentuan
 6. Kebijakan Privacy
 
@@ -101,10 +99,10 @@ Minus :
 Fitur:
 1. Display Produk Slide Show <ukuran besar>
 2. Box berisi
-  a. Nama Produk
-  b. Harga Produk
-  c. Tombol Beli <jika di klik otomatis masuk ke keranjang> #dan terus kelipatannya
-  d. Tombol Wishlist <jika di klik otomatis masuk ke wishlist> #hanya berlaku 1x, <jika di klik kembali akan dikeluarkan dari wishlist>
+a. Nama Produk
+b. Harga Produk
+c. Tombol Beli <jika di klik otomatis masuk ke keranjang> #dan terus kelipatannya
+d. Tombol Wishlist <jika di klik otomatis masuk ke wishlist> #hanya berlaku 1x, <jika di klik kembali akan dikeluarkan dari wishlist>
 
 Good Luck, Have Fun :3 
 
