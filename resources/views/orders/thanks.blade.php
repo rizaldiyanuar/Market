@@ -10,13 +10,13 @@
 </ol>
 </div>
 </div>
-</section> 
+</section>
 
 <section id="do_action">
 <div class="container">
 <div class="heading" align="center">
 <h3>YOUR COD ORDER HAS BEEN PLACED </h3>
-<p>Your order number is {{Session::get('order_id')}} and total payable about is PKR {{Session::get('grand_total')}}</p>
+<p>Your order number is {{Session::get('order_id')}} and total payable about is Rp {{Session::get('grand_total')}}</p>
 </div>
 
 </div>

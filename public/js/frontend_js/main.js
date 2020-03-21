@@ -4,8 +4,8 @@
 
 	var RGBChange = function() {
 	  $('#RGB').css('background', 'rgb('+r.getValue()+','+g.getValue()+','+b.getValue()+')')
-	};	
-		
+	};
+
 /*scroll to top*/
 
 $(document).ready(function(){
@@ -41,9 +41,9 @@ $(document).ready(function(){
 			url : '/get-product-price',
 			data : {idSize:idSize},
 			success:function(resp){
-				//alert(resp); 
+				//alert(resp);
 			var arr = resp.split('#');
-				$("#getPrice").html("PKR "+arr[0]);
+				$("#getPrice").html("Rp "+arr[0]);
 				$('#price').val(arr[0]);
 				if(arr[1]==0){
 					$("#cartButton").hide();
@@ -64,7 +64,7 @@ $(document).ready(function(){
 	$(".changeImage").click(function(){
 	var image = $(this).attr('src');
 	$(".mainImage").attr("src",image);
-	
+
  });
 });
 //zoom functionality
@@ -124,7 +124,7 @@ $().ready(function(){
 				required : "Please Enter Your Name!",
 				minLength : "Your name must contain 2 letters",
 				accept : "Your name must contain letters only"
-			}, 
+			},
 			email:{
 			  required : "Please enter your email",
 			  email : "Please enter valid email",
@@ -132,7 +132,7 @@ $().ready(function(){
 		  },
 			password:{
 				required: "Please provide your Password",
-				minLength: "Your Password must have 6 chracters long"	  
+				minLength: "Your Password must have 6 chracters long"
 			  }
 		}
 	 });
@@ -148,13 +148,13 @@ $().ready(function(){
 				required:true
 			}
 		},
-		messages:{ 
+		messages:{
 			email:{
 			  required : "Please enter your email",
 			  email : "Please enter valid email"
 		  },
 			password:{
-				required: "Please provide your Password"	  
+				required: "Please provide your Password"
 			  }
 		}
 	 });
@@ -177,22 +177,22 @@ $().ready(function(){
 				required:true
 			}
 		},
-		messages:{ 
+		messages:{
 			email:{
 			  required : "Please enter your email",
 			  email : "Please enter valid email"
 		  },
 			name:{
-				required: "Please provide your Name"	  
+				required: "Please provide your Name"
 			  },
 			address:{
-				required: "Please provide your Address"	  
+				required: "Please provide your Address"
 			  },
 			city:{
-				required: "Please provide your City"	  
+				required: "Please provide your City"
 			  },
 			state:{
-				required: "Please provide your State"	  
+				required: "Please provide your State"
 			  },
 		}
 	 });
@@ -217,7 +217,7 @@ $().ready(function(){
 			  alert("Error");
 		  }
 		});
-	 });	 
+	 });
 	 //Password Strenghten JQuery
 	 $('#myPassword').passtrength({
 		minChars: 4,
@@ -236,7 +236,7 @@ $().ready(function(){
 			$("#shipping_pincode").val($("#billing_pincode").val());
 			$("#shipping_mobile").val($("#billing_mobile").val());
 			}else{
-			$("#shipping_name").val('');	
+			$("#shipping_name").val('');
 			$("#shipping_address").val('');
 			$("#shipping_city").val('');
 			$("#shipping_state").val('');

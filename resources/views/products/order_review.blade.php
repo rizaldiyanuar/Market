@@ -54,7 +54,7 @@
                 <div class="form-group">
                 {{$shippingDetails->state}}
                 </div>
-                <div class="form-group">  
+                <div class="form-group">
                 {{$shippingDetails->country}}
                 </div>
                 <div class="form-group">
@@ -73,7 +73,7 @@
 <div class="container">
 
 <div class="shopper-informations">
-    <div class="row">					
+    <div class="row">
     </div>
 </div>
 
@@ -94,7 +94,7 @@
         </thead>
         <tbody>
             <?php $total_amount =0; ?>
-            @foreach($userCart as $cart) 
+            @foreach($userCart as $cart)
             <tr>
                 <td class="cart_product">
                     <a href=""><img style="width:80px;" src="{{asset('images/backend_img/products/small/'.$cart->image)}}" alt=""></a>
@@ -104,7 +104,7 @@
                 <p>Product Code: {{$cart->product_code}} | Size: {{$cart->size}}</p>
                 </td>
                 <td class="cart_price">
-                <p>PKR {{$cart->price}}</p>
+                <p>Rp {{$cart->price}}</p>
                 </td>
                 <td class="cart_quantity">
                     <div class="cart_quantity_button">
@@ -112,7 +112,7 @@
                     </div>
                 </td>
                 <td class="cart_total">
-                <p class="cart_total_price">PKR {{$cart->price*$cart->quantity}}</p>
+                <p class="cart_total_price">Rp {{$cart->price*$cart->quantity}}</p>
                 </td>
             </tr>
             <?php $total_amount = $total_amount + ($cart->price*$cart->quantity);?>
@@ -123,25 +123,25 @@
                     <table class="table table-condensed total-result">
                         <tr>
                             <td>Cart Sub Total</td>
-                            <td>PKR {{$total_amount}}</td>
+                            <td>Rp {{$total_amount}}</td>
                         </tr>
                         <tr class="shipping-cost">
                             <td>Shipping Cost (+)</td>
-                            <td>PKR 0</td>										
+                            <td>Rp 0</td>
                         </tr>
                         <tr class="shipping-cost">
                                 <td>Discount Amount (-)</td>
                         <td>
                         @if(!empty(Session::get('CouponAmount')))
-                           PKR {{Session::get('CouponAmount')}}
+                           Rp {{Session::get('CouponAmount')}}
                         @else
-                            PKR 0
+                            Rp 0
                         @endif
-                        </td>										
+                        </td>
                         </tr>
                         <tr>
                             <td>Grand Total</td>
-                        <td><span>PKR {{$grand_total=$total_amount - Session::get('CouponAmount')}}</span></td>
+                        <td><span>Rp {{$grand_total=$total_amount - Session::get('CouponAmount')}}</span></td>
                         </tr>
                     </table>
                 </td>

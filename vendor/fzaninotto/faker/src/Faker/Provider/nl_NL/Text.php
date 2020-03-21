@@ -787,7 +787,7 @@ waar i zich wendde en verdween. Maar wat 't was, wist ze niet.
 En in eens zag ze alles weer voor zich in 't donker van de kamer,
 't water met de tjalk die geankerd lag met z'n licht in de mast,
 de koeien aan 't water aan den overkant, dichterbij. Ze zag dat de
-avond niet viel, maar opkroop uit 't land, voor 't eerst gaf ze zich
+avond niet viel, maar oRpoop uit 't land, voor 't eerst gaf ze zich
 daarvan rekenschap. En ze zag vooral 't end van de rivier, de bocht,
 die in een punt uitliep, waar een groenige lichte plek in 't water
 was, daar waar de oever rondboog. En ze hoorde 't verre kraken van

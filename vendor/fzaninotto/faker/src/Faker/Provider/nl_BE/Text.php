@@ -6164,7 +6164,7 @@ beurze. Menigwerf had hij ook op zijnen hoed geslagen en gezegd dat
 daar zijn grootste schat stak. Als de smulpartij twee dagen en eenen
 nacht geduurd had, zeiden de Smadelijke Broeders tot Uilenspiegel:
 
---Laat ons opkramen en 't gelag betalen.
+--Laat ons oRpamen en 't gelag betalen.
 
 Uilenspiegel antwoordde:
 
@@ -9783,7 +9783,7 @@ en daar ik u nam voor haar, liep ik naar u toe.
 Op die rede zegde de oude jongedochter, dat ik kon terugkeeren waar ik
 van daan kwam; dat, als mijne vrouw mij liet zitten, het wel besteed
 was, want dat al de mannen truwanten, dieven en ketteren zijn, die
-alle meisjes willen verleiden en dat, als ik niet dadelijk opkraamde,
+alle meisjes willen verleiden en dat, als ik niet dadelijk oRpaamde,
 ze mij door heuren hond zou doen opvreten.
 
 En niet zonder schroom pakte ik mijne biezen, want een groote hond
@@ -16314,7 +16314,7 @@ aan hen, die ik minne.
 ... Toen smeet Michielken hem zijn pint klauwaard naar den kop, hem
 toeroepende dat hij er om loog, lijk een smerige vuilbaard die hij was;
 daarbij bedreigde hij hem met eene aftelling naar de eerste goesting,
-als hij niet dadelijk opkraamde.
+als hij niet dadelijk oRpaamde.
 
 ... De andere wilde nog antwoorden, doch Michielken deed als hij
 gezegd had: hij sloeg tweemaal met de vuist op zijn aangezicht en
@@ -21537,7 +21537,7 @@ vreten had? Hij heet zich mijnheer en meester, en zendt bevelen aan
 mij! Hij last en beveelt! Zeg aan uw meester, dat, mits hij zulk een
 mijnheer en zulk een meester is, welk zoo goed lasten en bevelen kan,
 de monniken op staanden voet zullen opgeknoopt worden, en gij daarbij,
-als gij niet dadelijk opkraamt!
+als gij niet dadelijk oRpaamt!
 
 En met een schop onder de broek, smeet hij hem buiten de kamer.
 

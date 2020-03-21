@@ -33,7 +33,7 @@
                 </div>
                 <div class="widget-content nopadding">
                     <table class="table table-striped table-bordered">
-                    
+
             <tbody>
                 <tr>
                 <td class="taskDesc"> Order Date</td>
@@ -45,17 +45,17 @@
                 </tr>
                 <tr>
                 <td class="taskDesc"> Order Total</td>
-                <td class="taskStatus">PKR {{$orderDetails->grand_total}}</td>
+                <td class="taskStatus">Rp {{$orderDetails->grand_total}}</td>
                 </tr>
                 <td class="taskDesc"> Shipping Charges</td>
-                <td class="taskStatus">PKR {{$orderDetails->shipping_charges}}</td>
+                <td class="taskStatus">Rp {{$orderDetails->shipping_charges}}</td>
                 </tr>
                 <tr>
                 <td class="taskDesc"> Coupon Code</td>
                 <td class="taskStatus">{{$orderDetails->coupon_code}}</td>
                 </tr>
                 <td class="taskDesc"> Coupon Amount</td>
-                <td class="taskStatus">PKR {{$orderDetails->coupon_amount}}</td>
+                <td class="taskStatus">Rp {{$orderDetails->coupon_amount}}</td>
                 </tr>
                 <tr>
                 <td class="taskDesc"> Payment Method</td>
@@ -88,7 +88,7 @@
                 </div>
                 <div class="widget-content nopadding">
                     <table class="table table-striped table-bordered">
-                    
+
             <tbody>
                 <tr>
                 <td class="taskDesc">Customer Name</td>

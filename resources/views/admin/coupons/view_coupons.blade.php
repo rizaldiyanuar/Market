@@ -52,7 +52,7 @@
             <td>{{ $coupon->coupon_code }}</td>
             <td>
             {{ $coupon->amount }}
-            @if($coupon->amount_type == "Percentage") % @else PKR @endif
+            @if($coupon->amount_type == "Percentage") % @else Rp @endif
             </td>
             <td>{{ $coupon->amount_type }}</td>
             <td>{{ $coupon->expiry_date }}</td>
@@ -64,7 +64,7 @@
             <a href="{{url('/admin/edit-coupon/'.$coupon->id)}}" class="btn btn-primary btn-mini" title="Edit Coupons">Edit</a>
             <a  rel="{{$coupon->id}}" rel1="delete-coupon"
             href="javascript:" class="btn btn-danger btn-mini deleteRecord" title="Delete Coupons">Delete</a></div>
-        </td>              
+        </td>
         @endforeach
         </tbody>
         </table>

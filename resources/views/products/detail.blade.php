@@ -13,7 +13,7 @@
     </div>
     @endif
 <div class="col-sm-3">
-@include('layouts.FrontLayout.front_sidebar')
+@include('layouts.frontLayout.front_sidebar')
 </div>
 
 <div class="col-sm-9 padding-right">
@@ -27,7 +27,7 @@
     </div>
     </div>
     <div id="similar-product" class="carousel slide" data-ride="carousel">
-        
+
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active thumbnails">
@@ -36,10 +36,10 @@
             <img class="changeImage" style="width:80px;" src="{{asset('images/backend_img/products/small/'.$productDetails->image)}}" alt="" />
                 </a>
             @foreach($productAltimages as $altImages)
-            <a href="{{asset('images/backend_img/products/large/'.$altImages->image)}}" 
+            <a href="{{asset('images/backend_img/products/large/'.$altImages->image)}}"
             data-standard="{{asset('images/backend_img/products/small/'.$altImages->image)}}">
             <img class="changeImage" style="width:120px;cursor:pointer;" src="{{asset('images/backend_img/products/small/'.$altImages->image)}}" alt="">
-            </a>        
+            </a>
             @endforeach
                 </div>
             </div>
@@ -67,7 +67,7 @@
         </p>
         <img src="images/product-details/rating.png" alt="" />
         <span>
-        <span id="getPrice">PKR {{ $productDetails->price }}</span>
+        <span id="getPrice">Rp {{ $productDetails->price }}</span>
             <label>Quantity:</label>
             <input type="text" name="quantity" value="1" />
             @if($total_stock>0)
@@ -99,21 +99,21 @@
         <p>{{ $productDetails->description }}</p>
     </div>
     </div>
-    
+
     <div class="tab-pane fade" id="care" >
     <div class="col-sm-12">
         <p>{{ $productDetails->care }}</p>
-    </div>  
     </div>
-    
+    </div>
+
     <div class="tab-pane fade" id="delivery" >
     <div class="col-sm-12">
             <p>100% Original Products <br>
                 Cash on Delivery
             </p>
-    </div>   
     </div>
-    
+    </div>
+
 </div>
 </div><!--/category-tab-->
 
@@ -124,14 +124,14 @@
     <div class="carousel-inner">
         <?php $count=1; ?>
             @foreach($relatedProducts->chunk(3) as $chunk)
-    <div <?php if($count==1){ ?> class="item active" <?php } else{ ?> class="item" <?php } ?>>	
+    <div <?php if($count==1){ ?> class="item active" <?php } else{ ?> class="item" <?php } ?>>
             @foreach($chunk as $item)
             <div class="col-sm-4">
                 <div class="product-image-wrapper">
                     <div class="single-products">
                         <div class="productinfo text-center">
                             <img style="width:200px;" src="{{asset('images/backend_img/products/small/'.$item->image)}}" alt="" />
-                        <h2>PKR {{$item->price}}</h2>
+                        <h2>Rp {{$item->price}}</h2>
                         <p>{{$item->product_name}}</p>
                         <a href="{{url('product/'.$item->id)}}"><button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button></a>
                         </div>
@@ -148,7 +148,7 @@
         </a>
         <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
         <i class="fa fa-angle-right"></i>
-        </a>			
+        </a>
 </div>
 </div><!--/recommended_items-->
 

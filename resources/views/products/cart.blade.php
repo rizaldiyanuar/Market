@@ -50,12 +50,12 @@
 <p>Product Code: {{$cart->product_code}} | Size: {{$cart->size}}</p>
 </td>
 <td class="cart_price">
-<p>PKR {{$cart->price}}</p>
+<p>Rp {{$cart->price}}</p>
 </td>
 <td class="cart_quantity">
     <div class="cart_quantity_button">
     <a class="cart_quantity_up" href="{{url('/cart/update-quantity/'.$cart->id.'/1')}}"> + </a>
-        <input class="cart_quantity_input" type="text" name="quantity" 
+        <input class="cart_quantity_input" type="text" name="quantity"
     value="{{$cart->quantity}}" autocomplete="off" size="2">
     @if($cart->quantity>1)
         <a class="cart_quantity_down" href="{{url('/cart/update-quantity/'.$cart->id.'/-1')}}"> - </a>
@@ -63,7 +63,7 @@
     </div>
 </td>
 <td class="cart_total">
-<p class="cart_total_price">PKR {{$cart->price*$cart->quantity}}</p>
+<p class="cart_total_price">Rp {{$cart->price*$cart->quantity}}</p>
 </td>
 <td class="cart_delete">
 <a class="cart_quantity_delete" href="{{url('cart/delete-product/'.$cart->id)}}"><i class="fa fa-times"></i></a>
@@ -101,11 +101,11 @@
 <div class="total_area">
     <ul>
         @if(!empty(Session::get('CouponAmount')))
-        <li>Sub Total <span>PKR <?php echo $total_amount; ?></span></li>
-        <li>Coupon Discount <span>PKR <?php echo Session::get('CouponAmount'); ?></span></li>
-        <li>Grand Total <span>PKR <?php echo $total_amount - Session::get('CouponAmount'); ?></span></li>
+        <li>Sub Total <span>Rp <?php echo $total_amount; ?></span></li>
+        <li>Coupon Discount <span>Rp <?php echo Session::get('CouponAmount'); ?></span></li>
+        <li>Grand Total <span>Rp <?php echo $total_amount - Session::get('CouponAmount'); ?></span></li>
         @else
-        <li>Grand Total <span>PKR <?php echo $total_amount; ?></span></li>
+        <li>Grand Total <span>Rp <?php echo $total_amount; ?></span></li>
         @endif
     </ul>
         <a class="btn btn-default update" href="">Update</a>

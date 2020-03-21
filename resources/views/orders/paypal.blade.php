@@ -9,13 +9,13 @@
 </ol>
 </div>
 </div>
-</section> 
+</section>
 
 <section id="do_action">
 <div class="container">
 <div class="heading" align="center">
 <h3>YOUR ORDER HAS BEEN PLACED </h3>
-<p>Your order number is {{Session::get('order_id')}} and total payable about is PKR {{Session::get('grand_total')}}</p>
+<p>Your order number is {{Session::get('order_id')}} and total payable about is Rp {{Session::get('grand_total')}}</p>
 <p>Please make Payment by clicking on below Payment Button</p>
 <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post"> {{csrf_field()}}
   <input type="hidden" name="cmd" value="_xclick">
