@@ -36,7 +36,7 @@ $mainCategories = Controller::mainCategories();
             <div class="col-sm-4">
                 <div class="logo pull-left">
                     <a href="{{url('http://hyper-mart.me')}}">
-                        <img src="{{url('/images/frontend_img/home/logo5.png')}}" alt="" /></a>
+                        <img src="{{url('/images/frontend_img/home/ibes logo.png')}}" alt="" height="40" width="100" /></a>
                 </div>
                 <div class="btn-group pull-right"></div>
                 </div>

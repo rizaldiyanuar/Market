@@ -161,7 +161,7 @@
             <tr>
                 <th>Product Code</th>
                 <th>Product Name</th>
-                <th>Product Size</th>
+                {{-- <th>Product Size</th> --}}
                 <th>Product Color</th>
                 <th>Product Price</th>
                 <th>Product Qty</th>
@@ -172,7 +172,7 @@
             <tr>
             <td>{{$pro->product_code}}</td>
                 <td>{{$pro->product_name}}</td>
-                <td>{{$pro->product_size}}</td>
+                {{-- <td>{{$pro->product_size}}</td> --}}
                 <td>{{$pro->product_color}}</td>
                 <td>{{$pro->product_price}}</td>
                 <td>{{$pro->product_qty}}</td>

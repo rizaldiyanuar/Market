@@ -51,7 +51,7 @@
                         <div class="field_wrapper">
                         <div>
                         <input type="text" name="sku[]" id="sku" placeholder="SKU" style="width:120px;" required/>
-                        <input type="text" name="size[]" id="size" placeholder="Size" style="width:120px;" required/>
+                        {{-- <input type="text" name="size[]" id="size" placeholder="Size" style="width:120px;" required/> --}}
                         <input type="text" name="price[]" id="price" placeholder="Price" style="width:120px;" required/>
                         <input type="text" name="stock[]" id="stock" placeholder="Stock" style="width:120px;"required/>
                         <a href="javascript:void(0);" class="add_button" title="Add field">Add</a>
@@ -79,7 +79,7 @@
             <tr>
               <th>Attribute ID</th>
               <th>SKU</th>
-              <th>Size</th>
+              {{-- <th>Size</th> --}}
               <th>Price</th>
               <th>Stock</th>
               <th>Actions</th>
@@ -90,14 +90,14 @@
               <tr class="gradeX">
               <td><input type="hidden" name="idAttr[]" value="{{$attribute->id }}"> {{$attribute->id }}</td>
               <td>{{ $attribute->sku }}</td>
-              <td>{{ $attribute->size }}</td>
+              {{-- <td>{{ $attribute->size }}</td> --}}
               <td><input type="type" name="price[]" value="{{$attribute->price }}"></td>
               <td><input type="type" name="stock[]" value="{{$attribute->stock }}"></td>
             <td class="center"><div class="fr">
               <input type="submit" value="Update" class="btn btn-primary btn-mini">
             <a  rel="{{$attribute->id}}" rel1="delete-attribute"
-              href="javascript:" class="btn btn-danger btn-mini deleteRecord">Delete</a></div></td>              
-          </tr> 
+              href="javascript:" class="btn btn-danger btn-mini deleteRecord">Delete</a></div></td>
+          </tr>
           @endforeach
           </tbody>
         </table>

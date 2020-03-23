@@ -47,24 +47,25 @@
 </td>
 <td class="cart_description">
 <h4><a href="">{{$cart->product_name}}</a></h4>
-<p>Product Code: {{$cart->product_code}} | Size: {{$cart->size}}</p>
+<p>Product Code: {{$cart->product_code}}
+    {{-- | Size: {{$cart->size}} --}}
+</p>
 </td>
-<td class="cart_price">
-<p>Rp {{$cart->price}}</p>
-</td>
+{{-- <td class="cart_price"><p>Rp {{$cart->price}}</p></td> --}}
+<td class="cart_price"><p>@currency($cart->price)</p></td>
 <td class="cart_quantity">
     <div class="cart_quantity_button">
-    <a class="cart_quantity_up" href="{{url('/cart/update-quantity/'.$cart->id.'/1')}}"> + </a>
-        <input class="cart_quantity_input" type="text" name="quantity"
-    value="{{$cart->quantity}}" autocomplete="off" size="2">
-    @if($cart->quantity>1)
+        @if($cart->quantity)
         <a class="cart_quantity_down" href="{{url('/cart/update-quantity/'.$cart->id.'/-1')}}"> - </a>
-    @endif
+        @elseif($cart->quantity=0)
+        <a class="cart_quantity_delete" href="{{url('cart/update-quantity/'.$cart->id)}}"><i class="fa fa-times"></i></a>
+        @endif
+        <input class="cart_quantity_input" type="text" name="quantity"value="{{$cart->quantity}}" autocomplete="off" size="2">
+        <a class="cart_quantity_up" href="{{url('/cart/update-quantity/'.$cart->id.'/1')}}"> + </a>
     </div>
 </td>
-<td class="cart_total">
-<p class="cart_total_price">Rp {{$cart->price*$cart->quantity}}</p>
-</td>
+{{-- <td class="cart_total"><p class="cart_total_price">Rp {{$cart->price*$cart->quantity}}</p></td> --}}
+<td class="cart_total"><p class="cart_total_price">@currency($cart->price*$cart->quantity)</p></td>
 <td class="cart_delete">
 <a class="cart_quantity_delete" href="{{url('cart/delete-product/'.$cart->id)}}"><i class="fa fa-times"></i></a>
 </td>
@@ -105,7 +106,8 @@
         <li>Coupon Discount <span>Rp <?php echo Session::get('CouponAmount'); ?></span></li>
         <li>Grand Total <span>Rp <?php echo $total_amount - Session::get('CouponAmount'); ?></span></li>
         @else
-        <li>Grand Total <span>Rp <?php echo $total_amount; ?></span></li>
+        <li>Grand Total <span><p>@currency($total_amount)</p></span></li>
+        {{-- <td class="cart_price"><p>@currency($cart->price)</p></td> --}}
         @endif
     </ul>
         <a class="btn btn-default update" href="">Update</a>

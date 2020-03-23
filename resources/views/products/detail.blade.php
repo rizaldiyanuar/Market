@@ -58,12 +58,12 @@
     <h2>{{ $productDetails->product_name }}</h2>
         <p>Product Code: {{ $productDetails->product_code }}</p>
         <p>
-            <select id="selSize" name="size" style="width:150px;">
+            {{-- <select id="selSize" name="size" style="width:150px;">
                 <option value="">Select Size</option>
                 @foreach($productDetails->attributes as $sizes)
             <option value="{{$productDetails->id}}-{{$sizes->size}}">{{$sizes->size}}</option>
             @endforeach
-            </select>
+            </select> --}}
         </p>
         <img src="images/product-details/rating.png" alt="" />
         <span>
