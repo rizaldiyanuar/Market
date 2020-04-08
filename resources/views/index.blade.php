@@ -74,7 +74,7 @@
                 <div class="single-products">
                         <div class="productinfo text-center">
                             <img src="{{asset('images/backend_img/products/small/'.$product->image)}}" alt="" />
-                        <h2>Rp {{$product->price}}</h2>
+                            <h2>@currency($product->price)</h2>
                         <p>{{$product->product_name}}</p>
                         <a href="{{url('product/'.$product->id)}}" class="btn btn-default add-to-cart">Detail Page</a>
                         </div>
