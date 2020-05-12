@@ -78,16 +78,18 @@
 </div>
 </section> <!--/#cart_items-->
 
-<section id="do_action">
+ <section id="do_action">
 <div class="container">
-<div class="heading">
+<!-- <div class="heading">
 <h3>What would you like to do next?</h3>
 <p>Choose if you have a Coupon code you want use.</p>
-</div>
+</div> -->
 <div class="row">
 <div class="col-sm-6">
-<div class="chose_area">
-    <ul class="user_option">
+<div style="text-align:center;" class="chose_area">
+<h3>Klik Check Out</h3>
+<p>Untuk melanjutkan ke pengisian Alamat Pengiriman</p>
+    <!-- <ul class="user_option">
         <li>
             <label>Coupon Code</label>
         <form action="{{url('/cart/apply-coupon')}}" method="post"> {{csrf_field()}}
@@ -95,7 +97,7 @@
             <input type="submit" value="Apply" class="btn btn-success">
         </form>
         </li>
-    </ul>
+    </ul> -->
 </div>
 </div>
 <div class="col-sm-6">
@@ -116,7 +118,7 @@
 </div>
 </div>
 </div>
-</section><!--/#do_action-->
+</section> --><!--/#do_action
 
 
 @endsection

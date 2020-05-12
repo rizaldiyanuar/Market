@@ -1,5 +1,5 @@
-<footer id="footer"><!--Footer-->
-    <!--<div class="footer-top">
+<footer id="footer">
+    <!-- <div class="footer-top">
         <div class="container">
             <div class="row">
                 <div class="col-sm-2">
@@ -77,9 +77,9 @@
                 </div>
             </div>
         </div>
-    </div>-->
+    </div> -->
     
-    <!--<div class="footer-widget">
+    <!-- <div class="footer-widget">
         <div class="container">
             <div class="row">
                 <div class="col-sm-2">
@@ -143,15 +143,15 @@
                 
             </div>
         </div>
-    </div>-->
+    </div> -->
     
     <div class="footer-bottom">
         <div class="container">
             <div class="row">
-                <p align="center">Copyright © 2018 Hyper-Mart Inc. All rights reserved.</p>
+                <p align="center">Copyright © 2020 IBEREALITY. All rights reserved.</p>
             
             </div>
         </div>
     </div>
     
-</footer><!--/Footer-->
+</footer>
