@@ -36,6 +36,8 @@ $mainCategories = Controller::mainCategories();
             <div class="col-sm-4">
                 <div class="logo pull-center">
                     <a href="{{url('http://localhost:8000/')}}">
+                <div class="logo pull-left">
+                    <a href="{{url('/')}}">
                         <img src="{{url('/images/frontend_img/home/ibes logo.png')}}" alt="" height="40" width="100" /></a>
                 </div>
                 </div>
@@ -88,6 +90,8 @@ $mainCategories = Controller::mainCategories();
     <ul class="nav navbar-nav collapse navbar-collapse">
     <li><a href="{{url('/')}}" class="active">Home</a></li>
         <li class="dropdown"><a href="#">All Product<i class="fa fa-angle-down"></i></a>
+        <li><a href="404.html">Blog</a></li>
+        <li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
             <ul role="menu" class="sub-menu">
                 @foreach($mainCategories as $cat)
             <li><a href="{{url('products/'.$cat->url)}}">{{$cat->Name}}</a></li>
